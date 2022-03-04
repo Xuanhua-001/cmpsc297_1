@@ -8,13 +8,13 @@
 
 const crypto = require("crypto"); // Used for encryption algorithms; Built-in
 
-// Define a SHA256 hash function from our crypto library
+// Define a SHA512 hash function from our crypto library
 
-function SHA256(message) {
+function SHA512(message) {
 
     return crypto
 
-        .createHash("sha256") // Set the hashing algorithm to SHA256
+        .createHash("sha512") // Set the hashing algorithm to SHA512
 
         .update(message) // Update the hash with the message
 
@@ -62,7 +62,7 @@ class Block {
     
             // Hash together...
     
-            return SHA256(
+            return SHA512(
     
                 this.prevHash + // The previous hash,
     

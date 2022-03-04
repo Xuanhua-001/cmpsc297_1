@@ -13,6 +13,7 @@ const Transaction = require("../src/transaction1000");
 function newtransaction(app) {
 
     // Create a new transaction
+    //but this time every new transaction is 1000 usd, 
 
     app.get("/newtransaction1000", function (request, response) {
 
