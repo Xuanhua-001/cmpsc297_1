@@ -25,7 +25,8 @@ function listtransactions(app) {
             txStr += global.transactions[i].prettify();
 
         }
-
+    
+    
 
 
         // Send the response for creating a new transaction
